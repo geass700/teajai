@@ -63,7 +63,7 @@ class _ProjectListPageState extends State<ProjectListPage> {
           return Card(
             child: InkWell(
               onTap: () {
-                _handleClickProjectItem(projects[index]);
+                //_handleClickProjectItem(projects[index]);
               },
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -179,11 +179,10 @@ class _ProjectListPageState extends State<ProjectListPage> {
   }
 }
 
-void _handleClickProjectItem(Project p) {
+/*void _handleClickProjectItem(Project p) {
   print(p.receiveAmount.toString());
-
   Navigator.push(
     context,
     MaterialPageRoute(builder: (context) => ProjectDetailsPage(project: p)),
   );
-}
+}*/
